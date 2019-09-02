@@ -12,9 +12,15 @@
     </head>
 
     <body>
+
+        <!-- GAME HEADER -->
+
         <div>
             <h1 id="game-header">Crystals Collector</h1>
         </div>
+
+        <!-- RULES CONTAINER -->
+
         <div class="rules-container" id="rules">
             <p>You will be given a random number at the start of the game.</p>
             <br>
@@ -26,6 +32,9 @@
             <br>
             <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
+
+        <!-- SCORE CONTAINER -->
+
         <div class="score-wrapper clearfix">
             <div>
                 <h1 id="comp-score">0</h1>
@@ -36,22 +45,26 @@
                 <p id="losses">Losses: <span id="losses-text"></span></p>
             </div>
         </div>
+
+        <!-- JEWELS AND BUTTONS -->
+
         <div class="jewels clearfix">
             <img class="btn" src="images/diamond1.jpg" alt="diamond1" value>
             <img class="btn" src="images/diamond2.jpg" alt="diamond2" value>
             <img class="btn" src="images/diamond3.jpg" alt="diamond3" value>
             <img class="btn" src="images/diamond4.jpg" alt="diamond4" value>
-
-        </div>
-        <div id="score-box">
-            <p id="final-score">0</p>
-        </div>
-        <div id="your-score-box">
-            <h1 id="your-score">0</h1>
         </div>
 
+        <!-- BOTTOM SCORE BOX -->
 
-
+        <div class="score-box">
+            <div id="total-score">
+                <p>Your total score is:<span id="totalScore-text"></span></p>
+            </div>
+            <div id="your-score-box">
+                <h1><span id="yourScore-text">0</span></h1>
+            </div>
+        </div>
 
 
         <script text="text/javascript" src="javascript/game.js"></script>

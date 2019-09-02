@@ -2,6 +2,7 @@ html {
     background-image: url("../images/backgrounds-blank-blue-953214.jpg");
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+/* GAME HEADER  */
 
 #game-header {
     background-color: #132E32;
@@ -14,6 +15,8 @@ html {
     padding: 15px;
 }
 
+/* RULES */
+
 .rules-container{
     margin: 15px auto;
     width: 400px;
@@ -23,6 +26,9 @@ html {
     opacity: .75;
     padding: 10px;
 }
+
+/* SCORE */
+
 .score-wrapper {
     margin: auto;
     width: 355px;
@@ -30,13 +36,14 @@ html {
     margin-bottom: 15px;
 }
 
+/* SCORE BOARD */
 
 #comp-score{
     line-height: 55px;
     float: left;
     background-color: #176087;
     color: rgba(255, 255, 255, 0.75);
-    font-size: 25px;
+    font-size: 40px;
     width: 150px;
     text-align: center;
     padding: 10px;
@@ -64,6 +71,8 @@ html {
     overflow: hidden;
   }
 
+/* JEWELS BUTTONS */
+
 .jewels {
         margin: auto;
         width: 340px;
@@ -76,4 +85,29 @@ html {
     height: 85px;
     width: 80px;
     margin-left: 20px;
+}
+
+/* SCORE BOX */
+.score-box {
+    margin: 15px auto;
+    width: 400px;
+    background-color: #0A2239;
+    color: #53A2BE;
+    opacity: .75;
+    padding: 10px;
+    line-height: 10px;
+    text-align: center;
+}
+
+#total-score{
+    margin: 20px;
+    padding: 5px;
+    margin-right: 170px;
+}
+
+#your-score-box {
+    margin-top: 35px;
+    font-size: 40px;
+    padding: 20px;
+}
 }
