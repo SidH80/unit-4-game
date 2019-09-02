@@ -27,6 +27,7 @@ html {
     opacity: .75;
     padding: 10px;
     box-shadow: 12px 12px 10px black;
+    border-radius: 25px;
 }
 
 /* SCORE */
@@ -49,8 +50,11 @@ html {
     text-align: center;
     padding: 10px;
     margin-right: 40px;
+    margin-left: 15px;
     margin-bottom: 15px;
     box-shadow: 13px 12px 11px black;
+    height: 60px;
+    border-radius: 25px;
 }
 
 #game-board {
@@ -64,7 +68,8 @@ html {
     height: 60px;
     line-height: 20px;
     margin-bottom: 15px;
-    box-shadow: 13px 12px 11px black;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 25px;
 }
 
 .clearfix {
@@ -78,18 +83,22 @@ html {
 
 .jewels {
         margin: auto;
-        width: 340px;
         opacity: .75;
-        width: 420px;
-    }
+        width: 435px;
+}
 
 .btn {
-    float: left;
     height: 85px;
     width: 80px;
-    margin-left: 20px;
-    box-shadow: 12px 12px 10px black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 25px;
+}
+
+button {
     margin-bottom: 15px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 10px 0px black;
+    border-radius: 25px;
 }
 
 /* SCORE BOX */
@@ -103,6 +112,7 @@ html {
     line-height: 10px;
     text-align: center;
     box-shadow: 12px 12px 10px black;
+    border-radius: 25px;
 }
 
 #total-score{
