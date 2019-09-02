@@ -2,13 +2,29 @@
 <html lang="en">
 
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Google Font -->
+
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+        <!-- Css Sheets -->
+
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
-        <title>Document</title>
+
+        <!-- Javascript/jQuery -->
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script text="text/javascript" src="javascript/game.js"></script>
+
+        <title>Crystals Collector!</title>
+
     </head>
 
     <body>
@@ -16,7 +32,7 @@
         <!-- GAME HEADER -->
 
         <div>
-            <h1 id="game-header">Crystals Collector</h1>
+            <h1 id="game-header">Crystals Collector!</h1>
         </div>
 
         <!-- RULES CONTAINER -->
@@ -49,10 +65,10 @@
         <!-- JEWELS AND BUTTONS -->
 
         <div class="jewels clearfix">
-            <button><img class="btn" src="images/diamond1.jpg" alt="diamond1" value="2"></button>
-            <button><img class="btn" src="images/diamond2.jpg" alt="diamond2" value="2"></button>
-            <button><img class="btn" src="images/diamond3.jpg" alt="diamond3" value="2"></button>
-            <button><img class="btn" src="images/diamond4.jpg" alt="diamond4" value="2"></button>
+            <button id="btn-1"><img class="btn" src="images/diamond1.jpg" alt="diamond1" value="2"></button>
+            <button id="btn-2"><img class="btn" src="images/diamond2.jpg" alt="diamond2" value="2"></button>
+            <button id="btn-3"><img class="btn" src="images/diamond3.jpg" alt="diamond3" value="2"></button>
+            <button id="btn-4"><img class="btn" src="images/diamond4.jpg" alt="diamond4" value="2"></button>
         </div>
 
         <!-- BOTTOM SCORE BOX -->
@@ -65,9 +81,6 @@
                 <h1><span id="yourScore-text">0</span></h1>
             </div>
         </div>
-
-
-        <script text="text/javascript" src="javascript/game.js"></script>
     </body>
 
 </html>
