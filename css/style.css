@@ -54,7 +54,7 @@ html {
     margin-bottom: 15px;
     box-shadow: 13px 12px 11px black;
     height: 60px;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 #game-board {
@@ -69,7 +69,7 @@ html {
     line-height: 20px;
     margin-bottom: 15px;
     box-shadow: 10px 10px 10px black;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .clearfix {
@@ -91,14 +91,17 @@ html {
     height: 85px;
     width: 80px;
     box-shadow: 5px 10px 10px black;
-    border-radius: 25px;
+    border-radius: 20px;
+    margin-top: 5px;
 }
 
 button {
     margin-bottom: 15px;
     margin-left: 10px;
     box-shadow: 5px 5px 10px 0px black;
-    border-radius: 25px;
+    border-radius: 20px;
+    background-color: #53A2BE;
+
 }
 
 /* SCORE BOX */
@@ -112,7 +115,7 @@ button {
     line-height: 10px;
     text-align: center;
     box-shadow: 12px 12px 10px black;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 #total-score{

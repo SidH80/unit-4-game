@@ -17,14 +17,10 @@ $(document).ready(function () {
     var compGuess = Math.floor(Math.random() * (120 - 34) + 34);
     console.log(compGuess);
 
-    function updateDisplay() {
-        $("#your-score").text(userScore);
-    };
-
     function resetScores() {
         userScore = 0;
-        wins = 0;
-        losses = 0;
+        $("#status-text").text("Now Playing");
+        $("#your-score").text(userScore);
     }
 
 
@@ -35,54 +31,59 @@ $(document).ready(function () {
 
         $("#btn-1").click(function () {
             console.log("You clicked a button1");
-            userScore = btn1 + userScore;
+            userScore += btn1;
             console.log(userScore);
             $("#your-score").text(userScore);
             console.log(btn1);
+            gameLogic();
         });
 
         $("#btn-2").click(function () {
-            userScore = btn2 + userScore;
+            userScore += btn2
             console.log("You clicked a button2");
             console.log(userScore);
             $("#your-score").text(userScore);
             console.log(btn2);
+            gameLogic();
         });
 
         $("#btn-3").click(function () {
-            userScore = btn3 + userScore;
+            userScore += btn3
             console.log("You clicked a button3");
             console.log(userScore);
             $("#your-score").text(userScore);
             console.log(btn3);
+            gameLogic();
         });
 
         $("#btn-4").click(function () {
-            userScore = btn4 + userScore;
+            userScore += btn4
             console.log("You clicked a button4");
             console.log(userScore);
             $("#your-score").text(userScore);
             console.log(btn4);
+            gameLogic();
         });
     }
 
-
-    gameLogic();
+    buttonLogic();
 
     function gameLogic() {
-
-        buttonLogic()
 
         if(userScore > compGuess)
         {
             losses++;
-            $("#status-text").text("Game Over. Try again.")
+            $("#status-text").text("Game Over. Try again.");
             $("#losses-text").text(losses);
+
+
         } else if(userScore === compGuess)
         {
             wins++;
             $("#wins-text").text(wins);
-            $("#status-text").text("You've Won!")
+            $("#status-text").text("You've Won!");
+
+
         }
     }
 
