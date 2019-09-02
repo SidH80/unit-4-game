@@ -13,6 +13,7 @@ html {
     font-size: 75px;
     margin-top: 15px;
     padding: 15px;
+    box-shadow: 12px 12px 10px black;
 }
 
 /* RULES */
@@ -25,15 +26,15 @@ html {
     font-size: 15px;
     opacity: .75;
     padding: 10px;
+    box-shadow: 12px 12px 10px black;
 }
 
 /* SCORE */
 
 .score-wrapper {
     margin: auto;
-    width: 355px;
+    width: 410px;
     opacity: .75;
-    margin-bottom: 15px;
 }
 
 /* SCORE BOARD */
@@ -47,8 +48,9 @@ html {
     width: 150px;
     text-align: center;
     padding: 10px;
-    height: 60px;
-    margin-right: 5px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    box-shadow: 13px 12px 11px black;
 }
 
 #game-board {
@@ -60,8 +62,9 @@ html {
     text-align: center;
     padding:10px;
     height: 60px;
-    margin-left: 5px;
     line-height: 20px;
+    margin-bottom: 15px;
+    box-shadow: 13px 12px 11px black;
 }
 
 .clearfix {
@@ -85,11 +88,13 @@ html {
     height: 85px;
     width: 80px;
     margin-left: 20px;
+    box-shadow: 12px 12px 10px black;
+    margin-bottom: 15px;
 }
 
 /* SCORE BOX */
 .score-box {
-    margin: 15px auto;
+    margin: 0px auto;
     width: 400px;
     background-color: #0A2239;
     color: #53A2BE;
@@ -97,6 +102,7 @@ html {
     padding: 10px;
     line-height: 10px;
     text-align: center;
+    box-shadow: 12px 12px 10px black;
 }
 
 #total-score{
