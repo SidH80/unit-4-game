@@ -1,0 +1,79 @@
+html {
+    background-image: url("../images/backgrounds-blank-blue-953214.jpg");
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+#game-header {
+    background-color: #132E32;
+    opacity: .75;
+    width: 100%;
+    text-align: center;
+    color: #53A2BE;
+    font-size: 75px;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.rules-container{
+    margin: 15px auto;
+    width: 400px;
+    background-color: #0A2239;
+    color: #53A2BE;
+    font-size: 15px;
+    opacity: .75;
+    padding: 10px;
+}
+.score-wrapper {
+    margin: auto;
+    width: 355px;
+    opacity: .75;
+    margin-bottom: 15px;
+}
+
+
+#comp-score{
+    line-height: 55px;
+    float: left;
+    background-color: #176087;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 25px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    height: 60px;
+    margin-right: 5px;
+}
+
+#game-board {
+    float: left;
+    background-color: #176087;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    width: 150px;
+    text-align: center;
+    padding:10px;
+    height: 60px;
+    margin-left: 5px;
+    line-height: 20px;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+    overflow: hidden;
+  }
+
+.jewels {
+        margin: auto;
+        width: 340px;
+        opacity: .75;
+        width: 420px;
+    }
+
+.btn {
+    float: left;
+    height: 85px;
+    width: 80px;
+    margin-left: 20px;
+}

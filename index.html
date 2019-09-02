@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
         <title>Document</title>
@@ -12,31 +13,41 @@
 
     <body>
         <div>
-            <h1>Crystals Collector</h1>
+            <h1 id="game-header">Crystals Collector</h1>
         </div>
-        <div>
+        <div class="rules-container" id="rules">
             <p>You will be given a random number at the start of the game.</p>
+            <br>
             <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to you total score.</p>
+            <br>
             <p>You wil the game by matching your total score to random number, you lose the game if you total score goes above the random number.</p>
+            <br>
             <p>The value of each crystal is hidden from you until you click on it.</p>
+            <br>
             <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
-        <div>
-            <h1 id="comp-score">0</h1>
+        <div class="score-wrapper clearfix">
+            <div>
+                <h1 id="comp-score">0</h1>
+            </div>
+            <div id="game-board">
+                <p>Playing . . .<span id="status-text"></span></p>
+                <p id="wins">Wins: <span></span id="wins-text"></p>
+                <p id="losses">Losses: <span id="losses-text"></span></p>
+            </div>
         </div>
-        <div class="game-board">
-            <p id="game-result"></p>
-            <p id="wins"></p>
-            <p id="losses"></p>
-        </div>
-        <div id="jewels">
+        <div class="jewels clearfix">
+            <img class="btn" src="images/diamond1.jpg" alt="diamond1" value>
+            <img class="btn" src="images/diamond2.jpg" alt="diamond2" value>
+            <img class="btn" src="images/diamond3.jpg" alt="diamond3" value>
+            <img class="btn" src="images/diamond4.jpg" alt="diamond4" value>
 
         </div>
         <div id="score-box">
-            <p id="final-score"></p>
+            <p id="final-score">0</p>
         </div>
         <div id="your-score-box">
-            <h1 id="your-score"></h1>
+            <h1 id="your-score">0</h1>
         </div>
 
 
