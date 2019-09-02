@@ -56,31 +56,107 @@
                 <h1 id="comp-score">0</h1>
             </div>
             <div id="game-board">
-                <p>Playing . . .<span id="status-text"></span></p>
-                <p id="wins">Wins: <span></span id="wins-text"></p>
-                <p id="losses">Losses: <span id="losses-text"></span></p>
+                <p><span id="status-text"></span></p>
+                <p>Wins: <span></span id="wins-text"></p>
+                <p>Losses: <span id="losses-text"></span></p>
             </div>
         </div>
 
         <!-- JEWELS AND BUTTONS -->
 
         <div class="jewels clearfix">
-            <button id="btn-1"><img class="btn" src="images/diamond1.jpg" alt="diamond1" value="2"></button>
-            <button id="btn-2"><img class="btn" src="images/diamond2.jpg" alt="diamond2" value="2"></button>
-            <button id="btn-3"><img class="btn" src="images/diamond3.jpg" alt="diamond3" value="2"></button>
-            <button id="btn-4"><img class="btn" src="images/diamond4.jpg" alt="diamond4" value="2"></button>
+            <button><img class="btn" id="btn-1" src="images/diamond1.jpg" alt="diamond1" value="2"></button>
+            <button><img class="btn" id="btn-2" src="images/diamond2.jpg" alt="diamond2" value="2"></button>
+            <button><img class="btn" id="btn-3" src="images/diamond3.jpg" alt="diamond3" value="2"></button>
+            <button><img class="btn" id="btn-4" src="images/diamond4.jpg" alt="diamond4" value="2"></button>
         </div>
 
         <!-- BOTTOM SCORE BOX -->
 
         <div class="score-box">
             <div id="total-score">
-                <p>Your total score is:<span id="totalScore-text"></span></p>
+                <p>Your total score is:</p>
             </div>
             <div id="your-score-box">
-                <h1><span id="yourScore-text">0</span></h1>
+                <h1><span id="your-score">0</span></h1>
             </div>
         </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                // declared variables
+                var userScore = 0;
+
+                //scoreboard
+                var wins = 0;
+                var losses = 0;
+
+                //button variables
+                var btn1 = Math.floor(Math.random() * 12) + 1;
+                var btn2 = Math.floor(Math.random() * 12) + 1;
+                var btn3 = Math.floor(Math.random() * 12) + 1;
+                var btn4 = Math.floor(Math.random() * 12) + 1;
+
+                //random numbers generated for buttons and computer score
+                var compGuess = Math.floor(Math.random() * (120 - 34) + 34);
+                console.log(compGuess);
+
+                function initGame() {
+                    userScore = 0;
+                };
+
+                $("#comp-score").text(compGuess);
+
+                $("#btn-1").click(function () {
+                    console.log("You clicked a button1");
+                    userScore = btn1 + userScore;
+                    console.log(userScore);
+                    $("#your-score").text(userScore);
+                    console.log(btn1);
+                });
+
+                $("#btn-2").click(function () {
+                    userScore = btn2 + userScore;
+                    console.log("You clicked a button2");
+                    console.log(userScore);
+                    $("#your-score").text(userScore);
+                    console.log(btn2);
+                });
+
+                $("#btn-3").click(function () {
+                    userScore = btn3 + userScore;
+                    console.log("You clicked a button3");
+                    console.log(userScore);
+                    $("#your-score").text(userScore);
+                    console.log(btn3);
+                });
+
+                $("#btn-4").click(function () {
+                    userScore = btn4 + userScore;
+                    console.log("You clicked a button4");
+                    console.log(userScore);
+                    $("#your-score").text(userScore);
+                    console.log(btn4);
+                });
+
+                if(userScore > compGuess)
+                {
+                    losses++;
+                    $("#status-text").text("Game Over. Try again.")
+                    initGame();
+                } else if(userScore === compGuess)
+                {
+                    wins++;
+                    $("wins-text").text(wins);
+                    $("#status-text").text("You've Won!")
+                }
+
+
+
+                // Document Ready end
+            });
+        </script>
     </body>
 
 </html>
