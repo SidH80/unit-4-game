@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    //Variables Declared
     var userScore;
     var compGuess;
 
@@ -11,6 +12,7 @@ $(document).ready(function () {
     var btn3;
     var btn4;
 
+    //Initializes game with cleared scores and randomized numbers
     function initGame() {
 
         userScore = 0;
@@ -24,11 +26,14 @@ $(document).ready(function () {
 
         $("#comp-score").text(compGuess);
         $("#your-score").text(userScore);
+
     }
 
     initGame();
 
+    //Contains logic for button increments and scoreboard updates
     function isPlaying() {
+
         $("#btn-1").click(function () {
             userScore += btn1;
             $("#your-score").text(userScore);
@@ -45,20 +50,19 @@ $(document).ready(function () {
             userScore += btn3;
             $("#your-score").text(userScore);
             gameLogic();
-
         })
 
         $("#btn-4").click(function () {
             userScore += btn4;
             $("#your-score").text(userScore);
             gameLogic();
-
-        });
+        })
 
     }
 
     isPlaying();
 
+    //Includes game logic conditionals and scoreboard updates called during isPlaying
     function gameLogic() {
 
         if(userScore === compGuess)
@@ -75,8 +79,7 @@ $(document).ready(function () {
             $("#losses-text").text(losses);
             initGame();
         }
+
     }
-
-
 
 });
