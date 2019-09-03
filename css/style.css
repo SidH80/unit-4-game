@@ -10,9 +10,9 @@ html {
     width: 100%;
     text-align: center;
     color: #53A2BE;
-    font-size: 75px;
-    margin-top: 15px;
-    padding: 15px;
+    font-size: 65px;
+    margin-top: 10px;
+    padding: 10px;
     box-shadow: 12px 12px 10px black;
 }
 
@@ -23,11 +23,12 @@ html {
     width: 400px;
     background-color: #0A2239;
     color: #53A2BE;
-    font-size: 15px;
+    font-size: 16px;
     opacity: .75;
     padding: 10px;
     box-shadow: 12px 12px 10px black;
     border-radius: 15px;
+    line-height: 16px;
 }
 
 /* SCORE */
@@ -130,7 +131,6 @@ button:hover {
 
 #your-score-box {
     margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 40px;
-    padding: 20px;
-}
+    margin-bottom: 10px;
+    font-size: 50px;
+    padding: 10px;
