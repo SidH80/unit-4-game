@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     //Variables Declared
     var userScore;
@@ -34,25 +34,25 @@ $(document).ready(function () {
     //Contains logic for button increments and scoreboard updates
     function isPlaying() {
 
-        $("#btn-1").click(function () {
+        $("#btn-1").click(function() {
             userScore += btn1;
             $("#your-score").text(userScore);
             gameLogic();
         })
 
-        $("#btn-2").click(function () {
+        $("#btn-2").click(function() {
             userScore += btn2;
             $("#your-score").text(userScore);
             gameLogic();
         })
 
-        $("#btn-3").click(function () {
+        $("#btn-3").click(function() {
             userScore += btn3;
             $("#your-score").text(userScore);
             gameLogic();
         })
 
-        $("#btn-4").click(function () {
+        $("#btn-4").click(function() {
             userScore += btn4;
             $("#your-score").text(userScore);
             gameLogic();
@@ -65,15 +65,12 @@ $(document).ready(function () {
     //Includes game logic conditionals and scoreboard updates called during isPlaying
     function gameLogic() {
 
-        if(userScore === compGuess)
-        {
+        if (userScore === compGuess) {
             wins++;
             $("#wins-text").text(wins);
             $("#status-text").text("You've Won!");
             initGame();
-        }
-        else if(userScore > compGuess)
-        {
+        } else if (userScore > compGuess) {
             losses++;
             $("#status-text").text("Game Over.");
             $("#losses-text").text(losses);
