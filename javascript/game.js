@@ -17,7 +17,7 @@ $(document).ready(function() {
 
         userScore = 0;
 
-        compGuess = Math.floor(Math.random() * (120 - 34) + 34);
+        compGuess = Math.floor(Math.random() * (120 - 19) + 19);
 
         btn1 = Math.floor(Math.random() * 12) + 1;
         btn2 = Math.floor(Math.random() * 12) + 1;
