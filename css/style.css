@@ -2,8 +2,8 @@ html {
     background-image: url("../images/backgrounds-blank-blue-953214.jpg");
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-/* GAME HEADER  */
 
+/* GAME HEADER  */
 #game-header {
     background-color: #132E32;
     opacity: .75;
@@ -17,8 +17,7 @@ html {
 }
 
 /* RULES */
-
-.rules-container{
+.rules-container {
     margin: 15px auto;
     width: 400px;
     background-color: #0A2239;
@@ -32,7 +31,6 @@ html {
 }
 
 /* SCORE */
-
 .score-wrapper {
     margin: auto;
     width: 410px;
@@ -40,8 +38,7 @@ html {
 }
 
 /* SCORE BOARD */
-
-#comp-score{
+#comp-score {
     line-height: 55px;
     float: left;
     background-color: #176087;
@@ -65,7 +62,7 @@ html {
     font-size: 18px;
     width: 150px;
     text-align: center;
-    padding:10px;
+    padding: 10px;
     height: 60px;
     line-height: 20px;
     margin-bottom: 15px;
@@ -81,11 +78,10 @@ html {
 }
 
 /* JEWEL BUTTONS */
-
 .jewels {
-        margin: auto;
-        opacity: .75;
-        width: 435px;
+    margin: auto;
+    opacity: .75;
+    width: 435px;
 }
 
 .btn {
@@ -123,7 +119,7 @@ button:hover {
     border-radius: 15px;
 }
 
-#total-score{
+#total-score {
     margin: 20px;
     padding: 5px;
     margin-right: 30px;
