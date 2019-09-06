@@ -7,76 +7,59 @@ $(document).ready(function() {
     var wins = 0;
     var losses = 0;
 
-    var btn1;
-    var btn2;
-    var btn3;
-    var btn4;
+    var randomButtonNumber = [];
+    console.log(randomButtonNumber);
 
-    //Initializes game with cleared scores and randomized numbers
-    function initGame() {
+    function createRanNum() {
 
-        userScore = 0;
-
+        // Generates computer random number and pushes to page
         compGuess = Math.floor(Math.random() * (120 - 19) + 19);
-
-        btn1 = Math.floor(Math.random() * 12) + 1;
-        btn2 = Math.floor(Math.random() * 12) + 1;
-        btn3 = Math.floor(Math.random() * 12) + 1;
-        btn4 = Math.floor(Math.random() * 12) + 1;
-
         $("#comp-score").text(compGuess);
-        $("#your-score").text(userScore);
 
-    }
+        // Generates 4 random numbers to be assigned to each button
+        for (var i = 0; i < 4; i++) {
+            randomButtonNumber[i] = Math.floor(Math.random() * 12) + 1;
 
-    initGame();
+            var imageCrystal = $("<img>");
 
-    //Contains logic for button increments and scoreboard updates
-    function isPlaying() {
 
-        $("#btn-1").click(function() {
-            userScore += btn1;
-            $("#your-score").text(userScore);
-            gameLogic();
-        })
+            imageCrystal.addClass("btn button button::hover");
 
-        $("#btn-2").click(function() {
-            userScore += btn2;
-            $("#your-score").text(userScore);
-            gameLogic();
-        })
+            imageCrystal.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
 
-        $("#btn-3").click(function() {
-            userScore += btn3;
-            $("#your-score").text(userScore);
-            gameLogic();
-        })
+            imageCrystal.attr("data-crystalvalue", randomButtonNumber[i]);
 
-        $("#btn-4").click(function() {
-            userScore += btn4;
-            $("#your-score").text(userScore);
-            gameLogic();
-        })
+            $(".jewels").append(imageCrystal);
 
-    }
-
-    isPlaying();
-
-    //Includes game logic conditionals and scoreboard updates called during isPlaying
-    function gameLogic() {
-
-        if (userScore === compGuess) {
-            wins++;
-            $("#wins-text").text(wins);
-            $("#status-text").text("You've Won!");
-            initGame();
-        } else if (userScore > compGuess) {
-            losses++;
-            $("#status-text").text("Game Over.");
-            $("#losses-text").text(losses);
-            initGame();
         }
 
+    function playGame() {}
+
+
     }
 
+    function initGame() {
+
+        // Sets user score to 0 and pushes to page
+        userScore = 0;
+        $("#your-score").text(userScore);
+
+        // Randomizer call
+        createRanNum();
+
+    };
+
+    // Calls start game function
+    initGame();
+
+
+
+
+
+
+
+
+
+
+// Document Ready Function End
 });
