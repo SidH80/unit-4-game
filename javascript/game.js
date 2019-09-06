@@ -18,22 +18,29 @@ $(document).ready(function() {
 
         // Generates 4 random numbers to be assigned to each button
         for (var i = 0; i < 4; i++) {
+
+            // Generates random button values
             randomButtonNumber[i] = Math.floor(Math.random() * 12) + 1;
 
             var imageCrystal = $("<img>");
 
+            // CSS added class
+            imageCrystal.addClass("crystals");
 
-            imageCrystal.addClass("btn button button::hover");
-
+            // Sources images from net and adds attribute
             imageCrystal.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
 
+            // Attributes string value and assigns number[i]
             imageCrystal.attr("data-crystalvalue", randomButtonNumber[i]);
 
+            // Appends variable to jewels div
             $(".jewels").append(imageCrystal);
 
         }
 
-    function playGame() {}
+    function playGame() {
+
+    }
 
 
     }
@@ -44,7 +51,7 @@ $(document).ready(function() {
         userScore = 0;
         $("#your-score").text(userScore);
 
-        // Randomizer call
+        // Randomize call
         createRanNum();
 
     };

@@ -84,12 +84,12 @@ html {
     width: 435px;
 }
 
-.btn {
-    height: 85px;
-    width: 80px;
+.crystals {
+    height: 90px;
+    width: 90px;
     box-shadow: 5px 10px 10px black;
     border-radius: 15px;
-    margin: 10px 14px;
+    margin: 11px 9px;
 }
 
 button {
