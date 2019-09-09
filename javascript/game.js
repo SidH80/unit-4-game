@@ -8,6 +8,8 @@ $(document).ready(function() {
     var losses = 0;
 
     var randomButtonNumber = [];
+    var images = ["images/diamond1.jpg", "images/diamond2.jpg", "images/diamond3.jpg", "images/diamond4.jpg"];
+
     console.log(randomButtonNumber);
 
     function createRanNum() {
@@ -50,12 +52,16 @@ $(document).ready(function() {
             imageGem.addClass("crystals");
 
             // Sources images from net and adds attribute
-            imageGem.attr("src", "https://cdn.britannica.com/78/170778-131-D35E060F/Reflections-diamond.jpg");
+            // imageGem.attr("src", "https://cdn.britannica.com/78/170778-131-D35E060F/Reflections-diamond.jpg");
 
             // Attributes string value and assigns number[i]
             imageGem.attr("data-value", randomButtonNumber[i]);
 
-            // Appends variable to jewels div
+            //Attributes images array to each item
+            imageGem.attr("src", images[i]);
+
+
+            // Appends variable to jewels di
             $(".jewels").append(imageGem);
 
         }
@@ -85,8 +91,8 @@ $(document).ready(function() {
 
         });
 
-    };
-    // Calls start game function
+    }
+    ;// Calls start game function
     initGame();
 
     // Document Ready Function End
